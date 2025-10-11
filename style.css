@@ -1,0 +1,182 @@
+body {
+  font-family: 'Prompt', sans-serif;
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background-color: #3b2b1b;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+header img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Search */
+.search-container {
+  text-align: center;
+  padding: 30px;
+  background-color: #f5f0eb;
+}
+
+.search-container input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* Filters */
+.filters {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filters button {
+  background-color: #8b5e34;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #a6744b;
+}
+
+/* Carousel */
+.carousel {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+/* Café cards */
+.cafes {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cafe-card {
+  background-color: #fdfaf6;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.cafe-card button {
+  background-color: #8b5e34;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* Bottom buttons */
+.bottom-buttons {
+  text-align: center;
+  margin: 30px;
+}
+
+.bottom-buttons button {
+  background-color: #8b5e34;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Contact */
+.contact-section {
+  background-color: #f5f0eb;
+  padding: 40px;
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #8b5e34;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Visitor Counter */
+.counter {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #3b2b1b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.social-icons img {
+  width: 25px;
+  margin: 0 5px;
+  vertical-align: middle;
+}

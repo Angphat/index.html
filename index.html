@@ -1,127 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>UNICAFe — คาเฟ่ใกล้มอ</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f7f5f3; }
-    header { background:#3e2416; color:#fff; padding:20px; text-align:center; }
-    nav a { color:#fff; margin:0 10px; text-decoration:none; }
-    .hero { text-align:center; padding:40px; background:#d7ccc8; }
-    .hero h2 { margin:0; }
-    .carousel { position:relative; max-width:800px; margin:20px auto; overflow:hidden; border-radius:10px; }
-    .carousel img { width:100%; display:none; }
-    .carousel img.active { display:block; }
-    .counter { text-align:center; margin:20px; font-weight:bold; }
-    .cafes { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:20px; }
-    .cafe-card { background:#fff; padding:15px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,.1); }
-    form { max-width:500px; margin:30px auto; background:#fff; padding:20px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,.1); }
-    form input, form textarea { width:100%; padding:10px; margin:8px 0; border:1px solid #ccc; border-radius:5px; }
-    form button { background:#3e2416; color:#fff; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; }
-    footer { background:#3e2416; color:#fff; text-align:center; padding:15px; margin-top:30px; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNICAFE คาเฟ่ใกล้มอ</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>UNICAFe — คาเฟ่ใกล้มอ</h1>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/924/924514.png" alt="logo">
+      <span class="brand">UNICAFE คาเฟ่ใกล้มอ</span>
+    </div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Recommended</a>
-      <a href="#">By Campus</a>
-      <a href="#">Map</a>
-      <a href="#contact">Contact</a>
+      <a href="#">HOME</a>
+      <a href="#">RECOMMENDED</a>
+      <a href="#">BY CAMPUS</a>
+      <a href="#">MAP</a>
+      <a href="#contact">ติดต่อเรา</a>
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>ค้นหาคาเฟ่บรรยากาศดี ๆ ใกล้มหาวิทยาลัยของคุณ</h2>
-    <p>แนะนำร้านกาแฟน่านั่งสำหรับทำงาน อ่านหนังสือ หรือพักผ่อน</p>
-  </section>
+  <!-- Search -->
+  <div class="search-container">
+    <input type="text" placeholder="ค้นหาคาเฟ่ที่คุณต้องการ... 🔍">
+  </div>
+
+  <!-- Filters -->
+  <div class="filters">
+    <button>✅ มีปลั๊กไฟ</button>
+    <button>🌙 เปิดดึก</button>
+    <button>💰 ราคาไม่แพง</button>
+    <button>📍 ใกล้ BTS/MRT</button>
+  </div>
 
   <!-- Carousel -->
-  <section class="carousel">
-    <img src="https://picsum.photos/seed/cafe1/1000/400" class="active" alt="Cafe 1">
-    <img src="https://picsum.photos/seed/cafe2/1000/400" alt="Cafe 2">
-    <img src="https://picsum.photos/seed/cafe3/1000/400" alt="Cafe 3">
-  </section>
+  <div class="carousel" id="carousel">
+    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Cafe 1">
+    <img src="https://images.unsplash.com/photo-1510626176961-4b37d0f0b90c" alt="Cafe 2">
+    <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9" alt="Cafe 3">
+  </div>
 
-  <!-- Visitors Counter -->
-  <div class="counter" id="visitorCounter"></div>
-
-  <!-- Recommended Cafes -->
-  <section class="cafes">
+  <!-- Cafes -->
+  <div class="cafes">
     <div class="cafe-card">
-      <h3>Cafe Aroma</h3>
-      <p>บรรยากาศสงบ เหมาะกับการอ่านหนังสือ</p>
+      <h3>CAFE A</h3>
+      ⭐⭐⭐⭐⭐
+      <p>เวลาเปิด-ปิด<br>8:00 - 19:00</p>
+      <button>ดูรายละเอียด</button>
     </div>
     <div class="cafe-card">
-      <h3>Chill & Sip</h3>
-      <p>ดนตรีเบา ๆ เครื่องดื่มหลากหลาย</p>
+      <h3>CAFE B</h3>
+      ⭐⭐⭐⭐☆
+      <p>เวลาเปิด-ปิด<br>9:00 - 18:00</p>
+      <button>ดูรายละเอียด</button>
     </div>
     <div class="cafe-card">
-      <h3>Bean Story</h3>
-      <p>ร้านสไตล์มินิมอล มุมถ่ายรูปเพียบ</p>
+      <h3>CAFE C</h3>
+      ⭐⭐⭐⭐⭐
+      <p>เวลาเปิด-ปิด<br>10:00 - 20:00</p>
+      <button>ดูรายละเอียด</button>
     </div>
-  </section>
+  </div>
 
-  <!-- Contact Form -->
-  <section id="contact">
-    <form onsubmit="return handleSubmit(event)">
-      <h2>Contact Me</h2>
-      <label>ชื่อ:</label>
-      <input type="text" id="name" name="name" required>
+  <!-- Buttons -->
+  <div class="bottom-buttons">
+    <button>ดูรีวิวทั้งหมด</button>
+    <button>เพิ่มคาเฟ่ของคุณ</button>
+  </div>
 
-      <label>อีเมล:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label>ข้อความ:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
+  <!-- Contact -->
+  <section class="contact-section" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="ชื่อของคุณ" required><br>
+      <input type="email" id="email" placeholder="อีเมลของคุณ" required><br>
+      <textarea id="message" rows="4" placeholder="พิมพ์ข้อความ..." required></textarea><br>
       <button type="submit">ส่งข้อความ</button>
     </form>
+    <p id="statusMsg"></p>
   </section>
+
+  <!-- Visitor Counter -->
+  <div class="counter">
+    👥 ผู้เข้าชมเว็บไซต์: <span id="visitorCount">0</span>
+  </div>
 
   <!-- Footer -->
   <footer>
-    <p>@ 2025 UNICAFE, ALL RIGHTS RESERVED</p>
+    <p>ABOUT | CONTACT</p>
+    <div class="social-icons">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+    </div>
+    <p>© 2025 UNICAFE, ALL RIGHTS RESERVED</p>
   </footer>
 
-  <script>
-    // Carousel
-    let index = 0;
-    const slides = document.querySelectorAll(".carousel img");
-    function showSlide() {
-      slides.forEach((img,i)=> img.classList.toggle("active", i===index));
-      index = (index + 1) % slides.length;
-    }
-    setInterval(showSlide, 3000);
-
-    // Visitors Counter
-    let count = localStorage.getItem("visitorCount") || 0;
-    count++;
-    localStorage.setItem("visitorCount", count);
-    document.getElementById("visitorCounter").textContent = "จำนวนผู้เข้าชมเว็บไซต์: " + count;
-
-    // Contact Form Verify + Sanitize
-    function sanitize(input) {
-      return input.replace(/</g,"&lt;").replace(/>/g,"&gt;").trim();
-    }
-    function handleSubmit(event) {
-      event.preventDefault();
-      let name = sanitize(document.getElementById("name").value);
-      let email = sanitize(document.getElementById("email").value);
-      let message = sanitize(document.getElementById("message").value);
-
-      if(!name || !email || !message) {
-        alert("กรุณากรอกข้อมูลให้ครบถ้วน");
-        return false;
-      }
-      alert("ส่งข้อความเรียบร้อย!\nชื่อ: " + name + "\nอีเมล: " + email + "\nข้อความ: " + message);
-      return true;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
